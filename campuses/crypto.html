@@ -3,25 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Crypto Trading - Aurix Academy</title>
+  <title>Crypto Campus</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .slide-in { animation: slideIn 0.6s ease-out forwards; opacity: 0; transform: translateY(20px); }
+    @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
+    .module-hover:hover { background-color: #374151; transition: background-color 0.2s; }
+  </style>
 </head>
-<body class="bg-black text-white min-h-screen p-6 font-sans">
-  <div class="max-w-4xl mx-auto">
-    <h1 class="text-4xl font-bold text-yellow-400 mb-4">📈 Crypto Trading Campus</h1>
-    <p class="text-gray-300 mb-6">Welcome to your crypto campus. Here are your available modules:</p>
-
-    <div class="grid sm:grid-cols-2 gap-6">
-      <div class="bg-[#1e1e1e] rounded-2xl p-5 shadow hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold mb-2">Module 1: Basics of Blockchain</h2>
-        <p class="text-sm text-gray-400">Understand how blockchain works, mining, and security.</p>
-      </div>
-      <div class="bg-[#1e1e1e] rounded-2xl p-5 shadow hover:shadow-lg transition">
-        <h2 class="text-xl font-semibold mb-2">Module 2: How to Trade Crypto</h2>
-        <p class="text-sm text-gray-400">Learn exchanges, wallets, risk management, and strategy.</p>
-      </div>
-      <!-- Add more modules here if needed -->
+<body class="bg-gray-900 text-white min-h-screen p-6 font-sans">
+  <div class="max-w-4xl mx-auto slide-in">
+    <div class="flex items-center mb-6 space-x-3">
+      <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M11 11V2a1 1 0 00-2 0v9H7.3a1 1 0 00-.96 1.28l.6 2.4A2 2 0 008 16h8a2 2 0 001.06-.32l.6-2.4A1 1 0 0016.7 11H13z" />
+      </svg>
+      <h1 class="text-4xl font-bold text-yellow-400">Crypto Trading Campus</h1>
     </div>
+    <p class="text-gray-400 mb-8">Start with the modules below to elevate your crypto skills:</p>
+
+    <a href="modules/crypto-basics.html" class="block bg-gray-800 rounded-xl p-6 mb-4 module-hover transition slide-in delay-100">
+      <h2 class="text-2xl font-semibold text-yellow-300 mb-2">🚀 Module 1: Basics of Blockchain</h2>
+      <p class="text-gray-400">Understand how blockchain works, mining, and security.</p>
+    </a>
   </div>
 </body>
 </html>
